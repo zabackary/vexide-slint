@@ -1,0 +1,42 @@
+[package]
+name = "vexide-slint"
+description = "Slint for the vexide runtime"
+repository = "https://github.com/zabackary/vexide-slint/" # TODO: update this
+authors = [
+  "vexide",
+  "Gavin Niederman <gavinniederman@gmail.com>",
+  "doinkythederp <doinkythederp@icloud.com>",
+  "Tropical",
+  "zabackary",
+] # for now
+license = "GPL-3.0-only"
+license-file = "LICENSE"
+keywords = ["vex", "vexide", "vex-robotics", "robotics", "slint", "bindings"]
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata.v5]
+upload-strategy = "differential"
+slot = 1
+icon = "cool-x"
+compress = true
+
+[package.metadata.docs.rs]
+targets = ["armv7a-none-eabi"]
+
+[dependencies]
+# TODO: also update this
+vexide = { version = "0.7.0-beta.3", default-features = false, features = [
+  "core",
+  "devices",
+  "async",
+] }
+slint = { version = "1.10.0", default-features = false, features = [
+  "compat-1-2",
+  "unsafe-single-threaded",
+  "libm",
+  "renderer-software",
+] }
+
+[dev-dependencies]
+vexide = "0.7.0-beta.3"

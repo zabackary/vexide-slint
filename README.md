@@ -1,5 +1,9 @@
 # Slint for vexide
 
+> [!WARNING]
+>
+> This repo has been moved to the `vexide` org.
+
 This crate exists to allow for the use of Slint-based UIs in [vexide]. It
 provides an implementation of the Slint `Platform` trait that uses the V5 brain
 to render the UI.

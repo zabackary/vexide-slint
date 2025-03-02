@@ -1,14 +1,14 @@
 [package]
 name = "vexide-slint"
 description = "Slint for the vexide runtime"
-repository = "https://github.com/zabackary/vexide-slint/" # TODO: update this
+repository = "https://github.com/vexide/vexide-slint/"
 authors = [
   "vexide",
   "Gavin Niederman <gavinniederman@gmail.com>",
   "doinkythederp <doinkythederp@icloud.com>",
   "Tropical",
   "zabackary",
-] # for now
+]
 license = "GPL-3.0-only"
 license-file = "LICENSE"
 keywords = ["vex", "vexide", "vex-robotics", "robotics", "slint", "bindings"]

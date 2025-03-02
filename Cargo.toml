@@ -10,7 +10,6 @@ authors = [
   "zabackary",
 ]
 license = "GPL-3.0-only"
-license-file = "LICENSE"
 keywords = ["vex", "vexide", "vex-robotics", "robotics", "slint", "bindings"]
 version = "0.1.0"
 edition = "2021"

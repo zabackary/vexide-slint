@@ -1,8 +1,12 @@
 #![no_std]
+#![no_main]
 
 use vexide::prelude::{Compete, CompeteExt as _, Peripherals};
 use vexide_slint::initialize_slint_platform;
 
+// The slint macro syntax doesn't actually work for the software renderer that
+// this crate uses. You'll have to use a build script. Check the readme for more
+// information.
 slint::slint!(
 import { AboutSlint, VerticalBox } from "std-widgets.slint";
 
